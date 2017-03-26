@@ -9,7 +9,7 @@ import ija.ija2016.homework2.cardpack.CardStackImp;
 public class FactoryKlondike extends AbstractFactorySolitaire {
     @Override
     public CardDeck createCardDeck() {
-        return null;
+        return CardDeckImp.createStandardDeck();
     }
 
     @Override
@@ -24,11 +24,11 @@ public class FactoryKlondike extends AbstractFactorySolitaire {
 
     @Override
     public CardDeck createTargetPack(Card.Color color) {
-        return null;
+        return CardDeckImp.createColorDeck(color);
     }
 
     @Override
     public CardStack createWorkingPack() {
-        return null;
+        return new CardStackImp(52);
     }
 }

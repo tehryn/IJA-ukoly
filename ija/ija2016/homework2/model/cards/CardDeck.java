@@ -6,6 +6,7 @@ public interface CardDeck {
     boolean isEmpty();
     int size();
     boolean put(Card card);
+    boolean my_put(Card card);
     Card pop();
     Card get();
     Card get(int index);

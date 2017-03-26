@@ -9,5 +9,6 @@ public interface CardStack extends CardDeck{
     public CardStack pop(Card card);
     public Card get(int index);
     public int top();
+//    public void my_put(Card card);
     public boolean put(CardStack stack);
 }
