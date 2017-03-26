@@ -72,11 +72,8 @@ public class CardStackImp extends CardDeckImp implements CardStack{
     }*/
 
     public boolean put(CardStack stack) {
-        System.out.println("Vkladam balik o velikosti: " + stack.size());
         for (int i = 0; i < stack.size(); i++) {
-            System.out.println(" Vkladam: " + stack.get(i));
             if (put(stack.get(i)) == false) {
-                System.out.println("  Vlozeni selhalo");
                 return false;
             }
         }
