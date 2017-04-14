@@ -2,6 +2,9 @@ package ija.ija2016.homework3.model.cards;
 
 import ija.ija2016.homework3.model.cards.Card;
 
+/**
+ * Object representing deck of cards.
+ */
 public interface CardDeck {
     /**
      * Tests if card deck is empty
@@ -17,10 +20,17 @@ public interface CardDeck {
 
     /**
      * Puts card into card deck
-     * @param  Card card          Card that will be added
+     * @param  card Card that will be added
      * @return      True if card was added, othewise false
      */
     boolean put(Card card);
+
+    /**
+     * Puts card into stack without checking colors and values
+     * @param  card Card that will be added
+     * @return      True on succes, false on error
+     */
+    boolean my_put(Card card);
 
     /**
      * Pops card from deck.
@@ -36,8 +46,8 @@ public interface CardDeck {
 
     /**
      * Retrieve specific card from deck
-     * @param  int index         Index where card is.
-     * @return     Card on specific index.
+     * @param  index index where card is.
+     * @return       Card on specific index.
      */
     Card get(int index);
 }

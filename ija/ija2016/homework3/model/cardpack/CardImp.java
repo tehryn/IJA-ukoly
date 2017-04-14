@@ -1,4 +1,4 @@
-package ija.ija2016.homework3.cardpack;
+package ija.ija2016.homework3.model.cardpack;
 import ija.ija2016.homework3.model.cards.Card;
 
 public class CardImp implements Card {

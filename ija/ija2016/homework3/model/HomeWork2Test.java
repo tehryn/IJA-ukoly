@@ -1,6 +1,6 @@
 /*
  */
-package ija.ija2016.homework3;
+package ija.ija2016.homework3.model;
 
 import ija.ija2016.homework3.model.board.AbstractFactorySolitaire;
 import ija.ija2016.homework3.model.board.FactoryKlondike;

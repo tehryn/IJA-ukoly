@@ -1,7 +1,13 @@
 package ija.ija2016.homework3.model.cards;
-import ija.ija2016.homework3.cardpack.CardImp;
+import ija.ija2016.homework3.model.cardpack.CardImp;
 
+/**
+ * Object representing card with value and color.
+ */
 public interface Card {
+    /**
+     * Object representing card color. There are 4 colors: CLUBS, DIAMONDS, HEARTS and SPADES
+     */
     public static enum Color {
         CLUBS, DIAMONDS, HEARTS, SPADES;
 
@@ -21,7 +27,7 @@ public interface Card {
 
         /**
          * Test if 2 cards have similar color.
-         * @param  Card c             2nd card
+         * @param  c    2nd card
          * @return      true if cards are similar
          */
         public boolean similarColorTo(Card c) {
@@ -52,7 +58,7 @@ public interface Card {
 
     /**
      * Test if 2 cards have similar color.
-     * @param  Card c             2nd card
+     * @param  card 2nd card
      * @return      true if cards are similar
      */
     boolean similarColorTo(Card card);
@@ -71,7 +77,7 @@ public interface Card {
 
     /**
      * Compare values of 2 cards
-     * @param  Card card          2nd card
+     * @param  card 2nd card
      * @return      Difference of values
      */
     int compareValue(Card card);

@@ -1,6 +1,6 @@
-package ija.ija2016.homework3.cardpack;
-import ija.ija2016.homework3.cardpack.CardImp;
-import ija.ija2016.homework3.cardpack.CardDeckImp;
+package ija.ija2016.homework3.model.cardpack;
+import ija.ija2016.homework3.model.cardpack.CardImp;
+import ija.ija2016.homework3.model.cardpack.CardDeckImp;
 import ija.ija2016.homework3.model.cards.CardStack;
 import ija.ija2016.homework3.model.cards.CardDeck;
 import ija.ija2016.homework3.model.cards.Card;
