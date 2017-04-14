@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<project name="Homework3" default="main" basedir=".">
+        <property name="build.dir" location="bin" />
+        <property name="lib.dir" location="lib" />
+        <property name="doc.dir" location="doc" />
+        <property name="dist.dir" location="dist" />
+        <property name="src.dir" location="../../.." />
+        <target name="clean">
+                <delete dir="${build.dir}" />
+                <delete dir="${doc.dir}" />
+                <delete dir="${dist.dir}" />
+        </target>
+        <target name="makedir">
+                <mkdir dir="${build.dir}" />
+                <mkdir dir="${doc.dir}" />
+                <mkdir dir="${dist.dir}" />
+        </target>
+        <target name="compile" depends="clean, makedir">
+                <javac srcdir="${src.dir}" destdir="${build.dir}">
+                    <classpath>
+                        <pathelement location="lib/junit-4.12.jar"/>
+                        <pathelement path="../../.."/>
+                    </classpath>
+                </javac>
+        </target>
+        <target name="run" depends="compile">
+            <junit fork="yes">
+                <classpath>
+                    <pathelement location="${build.dir}" />
+                    <pathelement location="lib/junit-4.12.jar"/>
+                    <pathelement location="lib/hamcrest-core-1.3.jar"/>
+                </classpath>
+                <batchtest>
+                    <fileset dir="${build.dir}">
+                        <include name="**/*Test*" />
+                    </fileset>
+                </batchtest>
+                <formatter type="brief" usefile="false"/>
+            </junit>
+        </target>
+        <target name="doc" depends="compile">
+                <javadoc sourcepath="model" destdir="${doc.dir}">
+                         <fileset dir="model/board">
+                         </fileset>
+                         <fileset dir="model/cards">
+                         </fileset>
+                </javadoc>
+        </target>
+        <!--Creates the deployable jar file
+        <target name="compile" depends="pre-compile">
+                <jar destfile="${dist.dir}\homework3.jar" basedir="${build.dir}">
+                        <manifest>
+                                <attribute name="Main-Class" value="ija.ija2016.homework3.model.Main" />
+                                <attribute name="Class-Path" value="./lib/junit-4.12.jar ./lib/hamcrest-core-1.3.jar" />
+                        </manifest>
+                </jar>
+        </target>
+        <target name="main" depends="compile, jar, doc">
+                <description>Main target</description>
+        </target>-->
+</project>
