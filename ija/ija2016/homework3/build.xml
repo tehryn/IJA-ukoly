@@ -7,12 +7,12 @@
         <property name="src.dir" location="../../.." />
         <target name="clean">
                 <delete dir="${build.dir}" />
-                <delete dir="${doc.dir}" />
+                <!--<delete dir="${doc.dir}" />-->
                 <delete dir="${dist.dir}" />
         </target>
         <target name="makedir">
                 <mkdir dir="${build.dir}" />
-                <mkdir dir="${doc.dir}" />
+                <!--<mkdir dir="${doc.dir}" />-->
                 <mkdir dir="${dist.dir}" />
         </target>
         <target name="compile" depends="clean, makedir">
