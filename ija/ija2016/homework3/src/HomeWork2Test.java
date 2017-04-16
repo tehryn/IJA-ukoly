@@ -1,12 +1,12 @@
 /*
  */
-package ija.ija2016.homework3.model;
+package src;
 
-import ija.ija2016.homework3.model.board.AbstractFactorySolitaire;
-import ija.ija2016.homework3.model.board.FactoryKlondike;
-import ija.ija2016.homework3.model.cards.Card;
-import ija.ija2016.homework3.model.cards.CardDeck;
-import ija.ija2016.homework3.model.cards.CardStack;
+import src.board.AbstractFactorySolitaire;
+import src.board.FactoryKlondike;
+import src.cards.Card;
+import src.cards.CardDeck;
+import src.cards.CardStack;
 import java.util.HashSet;
 import java.util.Set;
 import org.junit.After;

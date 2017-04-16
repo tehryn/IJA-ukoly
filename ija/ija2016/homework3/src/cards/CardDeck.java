@@ -1,6 +1,6 @@
-package ija.ija2016.homework3.model.cards;
+package src.cards;
 
-import ija.ija2016.homework3.model.cards.Card;
+import src.cards.Card;
 
 /**
  * Object representing deck of cards.

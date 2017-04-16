@@ -4,7 +4,7 @@
         <property name="lib.dir" location="lib" />
         <property name="doc.dir" location="doc" />
         <property name="dist.dir" location="dist" />
-        <property name="src.dir" location="../../.." />
+        <property name="src.dir" location="." />
         <target name="clean">
                 <delete dir="${build.dir}" />
                 <!--<delete dir="${doc.dir}" />-->
@@ -19,7 +19,7 @@
                 <javac srcdir="${src.dir}" destdir="${build.dir}">
                     <classpath>
                         <pathelement location="lib/junit-4.12.jar"/>
-                        <pathelement path="../../.."/>
+                        <pathelement path="."/>
                     </classpath>
                 </javac>
         </target>
@@ -39,10 +39,10 @@
             </junit>
         </target>
         <target name="doc" depends="compile">
-                <javadoc sourcepath="model" destdir="${doc.dir}">
-                         <fileset dir="model/board">
+                <javadoc sourcepath="src" destdir="${doc.dir}">
+                         <fileset dir="src/board">
                          </fileset>
-                         <fileset dir="model/cards">
+                         <fileset dir="src/cards">
                          </fileset>
                 </javadoc>
         </target>

@@ -1,5 +1,5 @@
-package ija.ija2016.homework3.model.cards;
-import ija.ija2016.homework3.model.cardpack.CardImp;
+package src.cards;
+import src.cardpack.CardImp;
 
 /**
  * Object representing card with value and color.

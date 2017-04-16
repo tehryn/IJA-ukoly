@@ -1,4 +1,4 @@
-package ija.ija2016.homework3.model;
+package src;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 // javac ija/ija2016/homework2/HomeWork2Test.java -cp .:junit-4.12.jar:hamcrest-core-1.3.jar

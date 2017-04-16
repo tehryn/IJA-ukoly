@@ -1,5 +1,5 @@
-package ija.ija2016.homework3.model.cardpack;
-import ija.ija2016.homework3.model.cards.Card;
+package src.cardpack;
+import src.cards.Card;
 
 public class CardImp implements Card {
     private int value;

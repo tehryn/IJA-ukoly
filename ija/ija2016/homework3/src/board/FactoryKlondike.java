@@ -1,10 +1,10 @@
-package ija.ija2016.homework3.model.board;
-import ija.ija2016.homework3.model.cards.Card;
-import ija.ija2016.homework3.model.cards.CardDeck;
-import ija.ija2016.homework3.model.cards.CardStack;
-import ija.ija2016.homework3.model.cardpack.CardImp;
-import ija.ija2016.homework3.model.cardpack.CardDeckImp;
-import ija.ija2016.homework3.model.cardpack.CardStackImp;
+package src.board;
+import src.cards.Card;
+import src.cards.CardDeck;
+import src.cards.CardStack;
+import src.cardpack.CardImp;
+import src.cardpack.CardDeckImp;
+import src.cardpack.CardStackImp;
 
 /**
  * Class that holds basic methods for solitare.

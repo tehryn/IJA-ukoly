@@ -1,9 +1,9 @@
-package ija.ija2016.homework3.model.cardpack;
-import ija.ija2016.homework3.model.cardpack.CardImp;
-import ija.ija2016.homework3.model.cardpack.CardDeckImp;
-import ija.ija2016.homework3.model.cards.CardStack;
-import ija.ija2016.homework3.model.cards.CardDeck;
-import ija.ija2016.homework3.model.cards.Card;
+package src.cardpack;
+import src.cardpack.CardImp;
+import src.cardpack.CardDeckImp;
+import src.cards.CardStack;
+import src.cards.CardDeck;
+import src.cards.Card;
 
 
 

@@ -1,7 +1,7 @@
-package ija.ija2016.homework3.model.board;
-import ija.ija2016.homework3.model.cards.Card;
-import ija.ija2016.homework3.model.cards.CardDeck;
-import ija.ija2016.homework3.model.cards.CardStack;
+package src.board;
+import src.cards.Card;
+import src.cards.CardDeck;
+import src.cards.CardStack;
 
 /**
  * Abstract class representing abstract factory.
